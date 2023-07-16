@@ -1,0 +1,11 @@
+env:
+  - key: SECRET_TOKEN
+    from:
+      secret: secret-token
+
+services:
+  - name: Aryan
+    plan: starter
+    env:
+      - key: PORT
+        value: "80"
